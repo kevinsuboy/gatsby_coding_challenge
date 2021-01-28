@@ -6,17 +6,17 @@ import { withRouter } from 'react-router-dom';
 // import { clearTransactionErrors } from '../../actions/transactions_actions';
 
 const mapStateToProps = (state, ownProps) => {
-  const symbol = ownProps.match.params.symbol;
-  return {
-    symbol,
-    company: state.entities.companies[symbol],
-    quote: state.entities.quotes[symbol],
-    prices: state.entities.prices[symbol],
-    entities: state.entities,
-    description: state.entities.descriptions[symbol],
-    holding: state.entities.holdings[symbol],
-    apiErrors: state.errors.api,
-  };
+  // const symbol = ownProps.match.params.symbol;
+  // return {
+  //   symbol,
+  //   company: state.entities.companies[symbol],
+  //   quote: state.entities.quotes[symbol],
+  //   prices: state.entities.prices[symbol],
+  //   entities: state.entities,
+  //   description: state.entities.descriptions[symbol],
+  //   holding: state.entities.holdings[symbol],
+  //   apiErrors: state.errors.api,
+  // };
 };
 
 const mapDispatchToProps = ( dispatch ) => ({

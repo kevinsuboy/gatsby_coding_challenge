@@ -37,7 +37,7 @@ export default class Stock extends Component {
         </div>
 
         <div className="stock-sidebar-container">
-          <StockSidebar {...props} />
+          <StockSidebar {...this.props} />
         </div>
       </div>
     );

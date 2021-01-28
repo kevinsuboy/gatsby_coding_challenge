@@ -1,7 +1,6 @@
 import React from 'react';
 
 const SidebarContent = ({ footer, theme, ...props }) => {
-  const colorTheme = setOverlay(theme);
 
   return (
     <div className="sidebar-container">

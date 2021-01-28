@@ -6,7 +6,7 @@ import {
     Redirect
 } from 'react-router-dom';
 
-import PorfolioContainer from './stock/stock_container';
+import StockContainer from './stock/stock_container';
 
 const App = () => (
     <div className="app-container">
