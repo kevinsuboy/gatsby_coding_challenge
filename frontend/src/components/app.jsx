@@ -6,12 +6,15 @@ import {
     Redirect
 } from 'react-router-dom';
 
+import PorfolioContainer from './stock/stock_container';
+
 const App = () => (
     <div className="app-container">
         <header id="global-header">
             {/* <Route path="/" component={NavBarContainer} /> */}
         </header>
         <Switch>
+            <Route exact path="/" component={StockContainer} />
         </Switch>
         <footer id="global-footer">
             {/* <Route path="/" component={FooterContainer} /> */}
