@@ -1,45 +1,25 @@
 import React, { Component } from 'react';
-import StockPriceGraphContainer from './graph/stock_price_graph_container';
-import StockSidebar from './sidebar/stock_sidebar';
+import LineGraph from './graph/linegraph';
+import TimeLine from './graph/timeline';
+import styles from './stock.module.scss';
 
 export default class Stock extends Component {
   constructor(props) {
     super(props);
   }
-
-  // fetchStockShowData() {
-  //   this.props.fetchStockShowData({
-  //     symbol: this.props.symbol,
-  //     // quotes: {}, prices: {}, companies: {},
-  //     ...this.props.entities,
-  //   });
-  // }
-
-  componentDidMount() {
-    // this.fetchStockShowData();
-  }
-
-  componentDidUpdate(prevProps) {
-    // if (this.props.symbol !== prevProps.symbol) this.fetchStockShowData();
-  }
-
   render() {
-    const { holding, symbol, company, quote, description, apiErrors } = this.props;
 
     return (
-      <div className="stock-container">
-        <div className="stock-main-container">
-          <h1>{company && company['companyName']}</h1>
-
-          <div>
-            <StockPriceGraphContainer quote={quote} symbol={symbol} />
+          <div className="newsfeed__chart__section">
+            <div className="newsfeed_price_asset">
+              <h1> $114,656,84</h1>
+              <p> $142.90 (-0,12) Today </p>
             </div>
-        </div>
-
-        <div className="stock-sidebar-container">
-          <StockSidebar {...this.props} />
-        </div>
-      </div>
-    );
+            <div className="newsfeed__chart">
+              <LineGraph />
+              <TimeLine />
+            </div>
+          </div>
+      );
   }
 }

@@ -1,3 +1,4 @@
+import './app.scss'
 import React from 'react';
 import {
     Route,
@@ -6,15 +7,16 @@ import {
     Redirect
 } from 'react-router-dom';
 
-import StockContainer from './stock/stock_container';
+import Header from './header'
+import NewsFeed from './newsfeed';
 
 const App = () => (
     <div className="app-container">
         <header id="global-header">
-            {/* <Route path="/" component={NavBarContainer} /> */}
+            <Route path="/" component={Header} />
         </header>
         <Switch>
-            <Route exact path="/" component={StockContainer} />
+            <Route exact path="/" component={NewsFeed} />
         </Switch>
         <footer id="global-footer">
             {/* <Route path="/" component={FooterContainer} /> */}
