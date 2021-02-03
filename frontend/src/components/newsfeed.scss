@@ -5,10 +5,17 @@
     background-color: black;
 }
 
+.newsfeed_ticker {
+    font-size: 16px;
+    color: white;
+}
+.newsfeed_price_asset {
+    color: white;
+}
 .newsfeed__container {
     flex: 1;
     background-color: black;
     font-size: 12px;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }

@@ -56,7 +56,7 @@ function LineGraph({ casesType }) {
     
     let data = [];
     let value = 50;
-    for(var i = 0; i < 366; i++){
+    for(let i = 0; i < 366; i++){
       let date = new Date();
       date.setHours(0,0,0,0);
       date.setDate(i);

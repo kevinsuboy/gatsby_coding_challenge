@@ -12,7 +12,11 @@ export default class NewsFeed extends Component {
     return (
       <div className="newsfeed">
         <div className="newsfeed__container">
-          <StockContainer/>
+          <StockContainer symbol="FB" />
+          <StockContainer symbol="AAPL" />
+          <StockContainer symbol="AMZN" />
+          <StockContainer symbol="NFLX" />
+          <StockContainer symbol="GOOG" />
         </div>
       </div>
       );
